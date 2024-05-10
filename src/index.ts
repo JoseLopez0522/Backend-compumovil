@@ -6,8 +6,11 @@ import path from 'path';
 import bodyParser from 'body-parser';
 import { config } from 'dotenv';
 import indexRoute from '@routes/index.route';
-
 config();
+// This example sets up an endpoint using the Express framework.
+// Watch this video to get started: https://youtu.be/rPR2aJ6XnAc.
+
+
 
 const app = express();
 app.set('PORT', process.env.PORT);
