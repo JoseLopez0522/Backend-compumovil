@@ -12,6 +12,8 @@ class Controller {
       console.log(res, req, response);
       return res.status(200).json({ success: 'true', response });
     } catch (error) {
+      console.log(error);
+      
       return res.status(400).json({ success: false, error });
       
     }
@@ -38,6 +40,7 @@ class Controller {
       });
       return res.status(200).json({ success: 'true', response, msg: mensaje });
     } catch (error) {
+      
       return res.status(400).json({ error });
     }
   };
